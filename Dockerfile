@@ -82,7 +82,7 @@ RUN microdnf remove -y gzip shadow-utils
 
 VOLUME ${NEXUS_DATA}
 
-EXPOSE 8081
+EXPOSE 9090
 USER nexus
 
 ENV INSTALL4J_ADD_VM_PARAMS="-Xms2703m -Xmx2703m -XX:MaxDirectMemorySize=2703m -Djava.util.prefs.userRoot=${NEXUS_DATA}/javaprefs"
