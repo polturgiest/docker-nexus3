@@ -25,7 +25,7 @@ LABEL name="Nexus Repository Manager" \
       description="The Nexus Repository Manager server \
           with universal support for popular component formats." \
       run="docker run -d --name NAME \
-          -p 8081:8081 \
+          -p 9090:9090 \
           IMAGE" \
       stop="docker stop NAME" \
       com.sonatype.license="Apache License, Version 2.0" \
@@ -33,7 +33,7 @@ LABEL name="Nexus Repository Manager" \
       io.k8s.description="The Nexus Repository Manager server \
           with universal support for popular component formats." \
       io.k8s.display-name="Nexus Repository Manager" \
-      io.openshift.expose-services="8081:8081" \
+      io.openshift.expose-services="9090:9090" \
       io.openshift.tags="Sonatype,Nexus,Repository Manager"
 
 ARG NEXUS_VERSION=3.63.0-01
